@@ -13,7 +13,7 @@ Para clonar este repositorio en tu máquina local, sigue estos pasos:
 3. Ejecuta el siguiente comando:
 
 ```bash
-git clone https://github.com/tuusuario/nombre-del-repositorio.git
+git clone https://github.com/kevindoblea1/super-bar.git
 ```
 Esto creará una copia local del repositorio en tu máquina.
 
