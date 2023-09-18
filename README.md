@@ -71,7 +71,7 @@ Reemplaza mi-rama con el nombre de tu rama, por ejemplo git push origin kevin
 
 * [Documentación oficial de Git](https://git-scm.com/doc)
 * [GitHub Guides](https://docs.github.com/en)
-* [Github Carlos Cimino](https://www.youtube.com/watch?v=A5NQ9BGAgjE&list=PLOw7b-NX043aDboqzlfclqNciJKX2BY-u)
+* [Github Carlos Cimino](https://www.youtube.com/watch?v=YETooN5uV24&list=PLOw7b-NX043YVzceLyF_AOtUktmuIwHWc)
 
 
 Ahora estás listo para comenzar a trabajar en tu propio proyecto y colaborar con otros desarrolladores.
