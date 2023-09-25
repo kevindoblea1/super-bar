@@ -1,0 +1,99 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #222; /* Fondo oscuro más oscuro */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ffcc00; /* Amarillo brillante para el título */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc00; /* Amarillo brillante para los enlaces en el encabezado */
+    font-weight: bold;
+}
+
+/* Estilos para las secciones */
+section {
+    background-color: #444; /* Fondo oscuro más claro */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    color: #ffcc00; /* Amarillo brillante para los títulos de sección */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #222; /* Fondo oscuro más oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #ffcc00; /* Amarillo brillante para los enlaces normales */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para botones (puedes agregar clases específicas para botones) */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Amarillo brillante para botones */
+    color: #333; /* Texto oscuro para botones */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff9900; /* Amarillo más oscuro para botones al pasar el ratón */
+}
+
+/* Estilos para imágenes (ajusta según el tamaño y la ubicación de tus imágenes) */
+img {
+    max-width: 100%;
+    height: auto;
+}
