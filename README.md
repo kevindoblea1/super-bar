@@ -17,7 +17,7 @@ git clone https://github.com/kevindoblea1/super-bar.git
 ```
 Esto creará una copia local del repositorio en tu máquina.
 
-## Crear una Rama Propia
+## Crear una Rama Propia (obligatorio)
 
 Antes de realizar cambios, es una buena práctica crear una rama propia para trabajar en ella. Sigue estos pasos para crear una nueva rama y cambiar a ella:
 
