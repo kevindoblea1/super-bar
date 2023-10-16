@@ -1,0 +1,52 @@
+:root {
+    --opiniones-background: #34571d; /* Fondo de la sección de opiniones */
+    --opiniones-text: #333; /* Color de texto de opiniones */
+    --opiniones-container-bg: #fbe489; /* Color de fondo del contenedor de opiniones */
+    --opiniones-border: #794a02; /* Color del borde de opiniones */
+    --opiniones-border-radius: 5px; /* Radio de borde de opiniones */
+    --opiniones-padding: 20px; /* Relleno de opiniones */
+    --opiniones-max-width: 300px; /* Ancho máximo de opiniones */
+    --opiniones-img-max-width: 100px; /* Ancho máximo de la imagen de opiniones */
+    --opiniones-img-border-radius: 50%; /* Radio de borde de la imagen de opiniones */
+    --opiniones-font-size: 16px; /* Tamaño de fuente de opiniones */
+    --opiniones-link-hover: #ff9900; /* Color de fondo al pasar el ratón sobre enlaces en opiniones */
+  }
+  
+  /* Estilos para la sección de opiniones */
+  .opiniones-section {
+    background-color: var(--opiniones-background);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .opiniones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .opinion {
+    background-color: var(--opiniones-container-bg);
+    border: 1px solid var(--opiniones-border);
+    border-radius: var(--opiniones-border-radius);
+    padding: var(--opiniones-padding);
+    max-width: var(--opiniones-max-width);
+    text-align: center;
+  }
+  
+  .opinion img {
+    max-width: var(--opiniones-img-max-width);
+    border-radius: var(--opiniones-img-border-radius);
+    margin-bottom: 10px;
+  }
+  
+  .opinion p {
+    font-size: var(--opiniones-font-size);
+    color: var(--opiniones-text);
+  }
+  
+  .opinion a:hover {
+    background-color: var(--opiniones-link-hover);
+  }
+  
