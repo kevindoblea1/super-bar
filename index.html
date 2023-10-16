@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/inicio.css" />
     <link rel="stylesheet" href="./assets/css/opiniones.css" />
+    <link rel="stylesheet" href="./assets/css/scroll.css">
     <link
       rel="icon"
       href="assets/img/favicon.png"
       type="icono-de-pagina"
       sizes="32x32"
     />
-    <link rel="stylesheet" href="./assets/css/nav.css" />
     <script
       src="https://kit.fontawesome.com/7e5b2d153f.js"
       crossorigin="anonymous"
@@ -27,12 +27,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
   </head>
   <body>
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
     <header>
       <h1>Super Bar</h1>
       <div id="menu-icon">&#9776;</div>
-
       <nav class="nav">
         <a href="#" class="logo nav-link">
         <button class="nav-toggle" aria-label="Abrir menú">
@@ -40,7 +43,9 @@
         </button>
         <ul class="nav-menu">
           <li class="nav-menu-item">
-            <a href="#inicio" class="nav-menu-link nav-link">Inicio</a>
+            <a href="#Inicio" class="nav-menu-link nav-link nav-menu-link_active"
+              >Inicio</a
+            >
           </li>
           <li class="nav-menu-item">
             <a href="#opiniones" class="nav-menu-link nav-link">Reseñas</a>
@@ -53,11 +58,6 @@
           </li>
           <li class="nav-menu-item">
             <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link nav-link nav-menu-link_active"
-              >Contacto</a
-            >
           </li>
         </ul>
       </nav>
@@ -300,6 +300,5 @@
       <p>&copy; 2023 Super Bar Codo a Codo</p>
       <img src="./assets/img/logo-codoacodo.png" alt="Logo de Super Bar" />
     </footer>
-    <script src="./assets/js/script.js"></script>
   </body>
 </html>

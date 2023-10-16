@@ -1,7 +1,17 @@
+/* Definición de variables */
+:root {
+    --header-background: #333;
+    --text-color: #fff;
+    --link-color: #ffcc00;
+    --link-hover-color: #ffcc00; /* Nuevo color al pasar el mouse */
+    --link-zoom-scale: 1.25; /* Nuevo valor para la escala al pasar el mouse */
+    --link-transition-duration: 0.3s; /* Nueva duración de la transición */
+}
+
 /* Estilo base del header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--header-background);
+    color: var(--text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,23 +28,23 @@ nav ul {
 nav li {
     margin-right: 20px;
     position: relative;
-    transition: transform 0.3s; /* Agregar una transición suave */
+    transition: transform var(--link-transition-duration); /* Usar variable */
 }
 
 /* Estilo al pasar el mouse (animación de zoom) */
 nav li:hover {
-    transform: scale(1.25); /* Aumenta el tamaño en un 25% al pasar el mouse */
+    transform: scale(var(--link-zoom-scale)); /* Usar variable */
 }
 
 /* Estilo de los enlaces <a> dentro de <li> */
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 
 /* Cambiar el color de texto al pasar el mouse */
 nav li:hover a {
-    color: #ffcc00; /* Cambia el color al pasar el mouse */
+    color: var(--link-hover-color); /* Usar variable */
 }
 
 /* Eliminar el zoom en los elementos no seleccionados */
