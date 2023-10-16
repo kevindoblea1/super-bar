@@ -1,0 +1,30 @@
+/* Estilos para la sección de Inicio */
+#inicio {
+    background-image: url('imagen.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#inicio h2 {
+    font-size: 36px;
+}
+
+#inicio p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#inicio a {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#inicio a:hover {
+    background-color: #ff9900;
+}

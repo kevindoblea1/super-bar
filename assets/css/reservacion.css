@@ -1,0 +1,50 @@
+/* Estilos para el formulario de reservación */
+form {
+    max-width: 100%; /* Cambiar el ancho máximo a 100% para ocupar todo el ancho */
+    margin: 0;
+    padding: 20px;
+    background-color: var(--color-section-background); /* Usar la variable definida en style.css */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--color-primary); /* Cambiar el color de las etiquetas para que coincida con el estilo general */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary); /* Usar la variable definida en style.css */
+    color: var(--color-text); /* Usar la variable definida en style.css */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--color-secondary); /* Usar la variable definida en style.css */
+}
