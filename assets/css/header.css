@@ -1,0 +1,43 @@
+/* Estilo base del header */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilo de los elementos <li> */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    position: relative;
+    transition: transform 0.3s; /* Agregar una transición suave */
+}
+
+/* Estilo al pasar el mouse (animación de zoom) */
+nav li:hover {
+    transform: scale(1.25); /* Aumenta el tamaño en un 25% al pasar el mouse */
+}
+
+/* Estilo de los enlaces <a> dentro de <li> */
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Cambiar el color de texto al pasar el mouse */
+nav li:hover a {
+    color: #ffcc00; /* Cambia el color al pasar el mouse */
+}
+
+/* Eliminar el zoom en los elementos no seleccionados */
+nav li:not(:hover) {
+    transform: scale(1);
+}
