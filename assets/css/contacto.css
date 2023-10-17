@@ -1,0 +1,89 @@
+:root {
+    --color-background: #333; /* Fondo oscuro */
+    --color-text: #fff; /* Texto claro */
+    --color-primary: #ffcc00; /* Amarillo brillante */
+    --color-secondary: #ff9900; /* Amarillo más oscuro */
+    --color-section-background: #444; /* Fondo oscuro más claro */
+    --color-header-background: #222; /* Fondo oscuro más oscuro */
+}
+/* Estilos para el formulario de contacto */
+#formulario-contacto form {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--color-section-background);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-contacto form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+#formulario-contacto form input[type="text"],
+#formulario-contacto form input[type="email"],
+#formulario-contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-contacto form textarea {
+    height: 100px;
+}
+
+#formulario-contacto form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formulario-contacto form button:hover {
+    background-color: var(--color-secondary);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary); /* Usar la variable definida en style.css */
+    color: var(--color-text); /* Usar la variable definida en style.css */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-secondary); /* Usar la variable definida en style.css */
+}
+
+/* Estilos específicos para el botón "Contactanos" en la sección de "Contacto */
+a.cta-button.contact {
+    /* Agrega tus estilos específicos aquí */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary); /* Usar la variable definida en style.css */
+    color: var(--color-header-background); /* Usar la variable definida en style.css */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+}
+
+a.cta-button.contact:hover {
+    background-color: var(--color-secondary); /* Usar la variable definida en style.css */
+}
