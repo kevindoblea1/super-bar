@@ -10,9 +10,12 @@
     --menu-text-color: #ffcc00;
     --menu-text-bold: bold;
     --menu-text-color-hover: #666;
-    --cart-bg-color: #333; /* Nuevo color de fondo del aside del carrito */
-    --cart-text-color: #fff; /* Nuevo color de texto del aside del carrito */
-    --cart-total-color: #ffcc00; /* Nuevo color del total del aside del carrito */
+    --cart-bg-color: #333;
+    /* Nuevo color de fondo del aside del carrito */
+    --cart-text-color: #fff;
+    /* Nuevo color de texto del aside del carrito */
+    --cart-total-color: #ffcc00;
+    /* Nuevo color del total del aside del carrito */
 }
 
 /* Estilos adicionales para la sección de menú */
@@ -65,7 +68,8 @@
     padding: 10px;
 }
 
-.menu-item-name, .menu-item-price {
+.menu-item-name,
+.menu-item-price {
     flex: 1;
 }
 
@@ -109,12 +113,14 @@
     background-color: var(--cart-bg-color);
     color: var(--cart-text-color);
     border: 1px solid #ccc;
-    border-radius: 10px; /* Agregamos bordes redondeados */
+    border-radius: 10px;
+    /* Agregamos bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 2;
     transition: right 0.3s ease-in-out;
     padding: 10px;
-    overflow-y: auto; /* Permite hacer scroll dentro del aside */
+    overflow-y: auto;
+    /* Permite hacer scroll dentro del aside */
 }
 
 #cart-content-aside {
@@ -134,6 +140,22 @@
 #cart-aside.show {
     right: 10px;
 }
+
+/* Estilos para el botón de compra */
+.checkout-button {
+    background-color: #ffcc00; /* Color de fondo similar al botón de Reserva una mesa */
+    color: #333; /* Color del texto similar al botón de Reserva una mesa */
+    padding: 10px 20px; /* Espaciado interno similar al botón de Reserva una mesa */
+    text-decoration: none; /* Eliminar subrayado en el enlace (si es un enlace) */
+    border-radius: 5px; /* Bordes redondeados similar al botón de Reserva una mesa */
+    font-weight: bold; /* Peso de la fuente similar al botón de Reserva una mesa */
+    display: inline-block; /* Mostrar el botón en línea con el contenido */
+  }
+  
+  .checkout-button:hover {
+    background-color: #ff9900; /* Cambia el color de fondo al pasar el mouse similar al botón de Reserva una mesa */
+  }
+  
 
 /* Estilos responsivos */
 @media (max-width: 768px) {

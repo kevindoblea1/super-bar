@@ -28,6 +28,20 @@ function addToCartAside(itemName, itemPrice) {
     cartTotalAside.textContent = `$${total.toFixed(2)}`;
 }
 
+// Agrega esta función para manejar el botón de compra
+function handleCheckout() {
+  const checkoutButton = document.getElementById('checkout-button');
+
+  checkoutButton.addEventListener('click', () => {
+    // Aquí puedes agregar la lógica para procesar la compra
+    // Por ejemplo, redireccionar a una página de pago o mostrar un mensaje de confirmación
+    alert('Gracias por tu compra');
+    // También puedes limpiar el carrito o realizar otras acciones necesarias
+  });
+}
+
+// Llama a la función para manejar el botón de compra
+handleCheckout();
 
 // Captura de clics en los botones "Agregar" en el menú
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
@@ -52,3 +66,37 @@ cartCloseButton.addEventListener('click', () => {
     cartAside.classList.remove('show');
     cartCloseButton.style.display = 'none'; // Oculta el icono "X"
 });
+// Agrega esta función para manejar el botón de compra
+function handleCheckout() {
+    const checkoutButton = document.getElementById('checkout-button');
+  
+    checkoutButton.addEventListener('click', () => {
+      // Crear una factura con el total
+      const total = parseFloat(cartTotalAside.textContent.replace('$', ''));
+  
+      // Lógica para imprimir la factura (puede variar según el navegador y configuración del usuario)
+      const printWindow = window.open('', '', 'width=600,height=600');
+      printWindow.document.open();
+      printWindow.document.write('<html><head><title>Factura de Compra</title></head><body>');
+      printWindow.document.write('<h1>Factura de Compra</h1>');
+      printWindow.document.write(`<p>Total: $${total.toFixed(2)}</p>`);
+      printWindow.document.write('<p>Gracias por tu compra</p>');
+      printWindow.document.write('</body></html>');
+      printWindow.document.close();
+      printWindow.print();
+      printWindow.close();
+  
+      // Limpiar el carrito
+      cartItemsAside.innerHTML = '';
+      cartTotalAside.textContent = '$0.00';
+  
+      // Reiniciar el contador de elementos
+      const cartItemCount = document.getElementById('cart-item-count');
+      cartItemCount.textContent = '0';
+    });
+  }
+  
+  // Llama a la función para manejar el botón de compra
+  handleCheckout();
+  
+  
