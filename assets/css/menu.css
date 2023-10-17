@@ -1,0 +1,148 @@
+:root {
+    --menu-width: 50%;
+    --menu-margin: 10px;
+    --menu-padding: 15px;
+    --menu-bg-color: #222;
+    --menu-border: 1px solid #ddd;
+    --menu-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    --menu-transform-scale: 1.02;
+    --menu-box-shadow-hover: 0 0 20px rgba(0, 0, 0, 0.3);
+    --menu-text-color: #ffcc00;
+    --menu-text-bold: bold;
+    --menu-text-color-hover: #666;
+    --cart-bg-color: #333; /* Nuevo color de fondo del aside del carrito */
+    --cart-text-color: #fff; /* Nuevo color de texto del aside del carrito */
+    --cart-total-color: #ffcc00; /* Nuevo color del total del aside del carrito */
+}
+
+/* Estilos adicionales para la sección de menú */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para cada categoría de menú */
+.menu-category {
+    flex-basis: calc(var(--menu-width) - (2 * var(--menu-margin)));
+    margin: var(--menu-margin);
+    padding: var(--menu-padding);
+    background-color: var(--menu-bg-color);
+    border: var(--menu-border);
+    text-align: center;
+    box-shadow: var(--menu-box-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-category:hover {
+    transform: scale(var(--menu-transform-scale));
+    box-shadow: var(--menu-box-shadow-hover);
+}
+
+.menu-category h2 {
+    color: var(--menu-text-color);
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
+    padding: 5px 0;
+    font-weight: var(--menu-text-bold);
+    color: var(--menu-text-color-hover);
+}
+
+/* Estilos para los elementos del menú y el carrito */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu-item-name, .menu-item-price {
+    flex: 1;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: var(--menu-text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-to-cart i {
+    margin-right: 5px;
+}
+
+/* Estilo para el icono del carrito */
+#cart-icon-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+}
+
+#cart-icon {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+#cart-icon.hidden {
+    display: none;
+}
+
+/* Estilo para el aside del carrito */
+.cart-aside {
+    position: fixed;
+    top: 10px;
+    right: -350px;
+    width: 300px;
+    background-color: var(--cart-bg-color);
+    color: var(--cart-text-color);
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Agregamos bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transition: right 0.3s ease-in-out;
+    padding: 10px;
+    overflow-y: auto; /* Permite hacer scroll dentro del aside */
+}
+
+#cart-content-aside {
+    display: block;
+}
+
+#cart-items-aside {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-total-aside {
+    font-weight: bold;
+    color: var(--cart-total-color);
+}
+
+#cart-aside.show {
+    right: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-category {
+        flex-basis: 100%;
+    }
+}

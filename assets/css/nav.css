@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #f8ba5c; /* Amarillo brillante (mantenido) */
-  --secondary-color: #d4a650; /* Amarillo más oscuro (ajustado) */
+  --primary-color: #ffcc00; /* Amarillo brillante (mantenido) */
+  --secondary-color: #222; /* Amarillo más oscuro (ajustado) */
   --mobile-background: #444; /* Fondo oscuro más claro (mantenido) */
   --scroll-to-top-background: #222; /* Fondo oscuro más oscuro (mantenido) */
   --scroll-to-top-color: #fff; /* Texto blanco en el botón de scroll (mantenido) */

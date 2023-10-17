@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super Bar</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/inicio.css" />
-    <link rel="stylesheet" href="./assets/css/opiniones.css" />
-    <link rel="stylesheet" href="./assets/css/scroll.css">
-    <link
-      rel="icon"
-      href="assets/img/favicon.png"
-      type="icono-de-pagina"
-      sizes="32x32"
-    />
-    <script
-      src="https://kit.fontawesome.com/7e5b2d153f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./assets/js/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/css/nav.css" />
-  </head>
-  <body>
-    <div id="progress">
-      <span id="progress-value">&#x1F815;</span>
-    </div>
-    <header>
-      <h1>Super Bar</h1>
-      <div id="menu-icon">&#9776;</div>
-      <nav class="nav">
-        <a href="#" class="logo nav-link">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Bar</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/inicio.css" />
+  <link rel="stylesheet" href="./assets/css/opiniones.css" />
+  <link rel="stylesheet" href="./assets/css/scroll.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="icon" href="assets/img/favicon.png" type="icono-de-pagina" sizes="32x32" />
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  <script defer src="./assets/js/script.js"></script>
+  <script defer src="./assets/js/cart.js" > </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/nav.css" />
+</head>
+
+<body>
+  <!-- Felcha para la barra de progreso -->
+  <div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+  </div>
+
+
+  <header>
+    <h1>Super Bar</h1>
+    <div id="menu-icon">&#9776;</div>
+    <nav class="nav">
+      <a href="#" class="logo nav-link">
         <button class="nav-toggle" aria-label="Abrir menú">
           <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-menu">
           <li class="nav-menu-item">
-            <a href="#Inicio" class="nav-menu-link nav-link nav-menu-link_active"
-              >Inicio</a
-            >
+            <a href="#Inicio" class="nav-menu-link nav-link nav-menu-link_active">Inicio</a>
           </li>
           <li class="nav-menu-item">
             <a href="#opiniones" class="nav-menu-link nav-link">Reseñas</a>
@@ -60,245 +54,205 @@
             <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
           </li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+  </header>
 
-    <section
-      id="inicio"
-      style="
+  <section id="inicio" style="
         background-image: url('./assets/img/fondo-inicio.jpg');
         background-size: cover;
-      "
-    >
-      <h2>¡Bienvenidos a Super Bar!</h2>
-      <p>
-        En Super Bar, hemos creado un lugar único para que disfrutes de la noche
-        en su máxima expresión. Somos tu refugio en la ciudad, donde la comida
-        es exquisita, las sonrisas son contagiosas y los tragos son
-        inolvidables.
-      </p>
-      <a href="./reservacion.html" class="cta-button">Reserva una mesa</a>
-      <a href="#menu" class="cta-button">Ver menú</a>
-    </section>
+      ">
+    <h2>¡Bienvenidos a Super Bar!</h2>
+    <p>
+      En Super Bar, hemos creado un lugar único para que disfrutes de la noche
+      en su máxima expresión. Somos tu refugio en la ciudad, donde la comida
+      es exquisita, las sonrisas son contagiosas y los tragos son
+      inolvidables.
+    </p>
+    <a href="./reservacion.html" class="cta-button">Reserva una mesa</a>
+    <a href="#menu" class="cta-button">Ver menú</a>
+  </section>
 
-    <section id="opiniones" class="opiniones-section">
-      <h2>Opiniones de Clientes</h2>
-      <div class="opiniones-container">
-        <div class="opinion">
-          <img src="./assets/img/opiniones/cliente.jpg" alt="Cliente 1" />
-          <p>
-            "Una experiencia increíble. La comida y el ambiente son
-            excepcionales. ¡Volveré seguro!"
-          </p>
-        </div>
-        <div class="opinion">
-          <img src="./assets/img/opiniones/cliente2.jpg" alt="Cliente 2" />
-          <p>
-            "Super Bar es mi lugar favorito en la ciudad. Siempre me siento
-            bienvenido aquí."
-          </p>
-        </div>
-        <div class="opinion">
-          <img src="./assets/img/opiniones/cliente3.jpg" alt="Cliente 3" />
-          <p>
-            "No puedo creer lo fantástico que es Super Bar. Cada visita es una
-            delicia para los sentidos. ¡Libertad y buenos tragos!"
-          </p>
-        </div>
-        <div class="opinion">
-          <img src="./assets/img/opiniones/cliente4.jpg" alt="Cliente 4" />
-          <p>
-            "Super Bar es el lugar donde hago mis mejores recuerdos. ¡La comida
-            es sublime!"
-          </p>
-        </div>
-        <!-- Agrega más opiniones según sea necesario -->
+  <section id="opiniones" class="opiniones-section">
+    <h2>Opiniones de Clientes</h2>
+    <div class="opiniones-container">
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente.jpg" alt="Cliente 1" />
+        <p>
+          "Una experiencia increíble. La comida y el ambiente son
+          excepcionales. ¡Volveré seguro!"
+        </p>
       </div>
-    </section>
-
-    <section id="menu">
-      <h2>Menú</h2>
-      <p>Explora nuestra deliciosa selección de bebidas y comidas.</p>
-      <h3>Cócteles Clásicos</h3>
-      <ol>
-        Fernet con Coca - Fernet Branca y Coca-Cola
-      </ol>
-      <ol>
-        Campari con Naranja - Campari con jugo de naranja y una rodaja de
-        naranja.
-      </ol>
-      <ol>
-        Cubalibre - Ron, Coca-Cola y limón.
-      </ol>
-      <ol>
-        Negroni - Campari, vermut rojo, ginebra y una rodaja de naranja.
-      </ol>
-      <ol>
-        Mojito - Ron blanco, azúcar, menta, lima, soda.
-      </ol>
-      <ol>
-        Martini - Ginebra o vodka, vermut seco o dulce, aceituna.
-      </ol>
-      <ol>
-        Daiquiri - Ron blanco, jugo de limón, jarabe simple.
-      </ol>
-
-      <h3>Cervezas</h3>
-      <h4>Artesanales:</h4>
-      <ol>
-        IPA, APA, Amber, Lager, Porter.
-      </ol>
-
-      <h4>Tradicionales:</h4>
-      <ol>
-        Quilmes
-      </ol>
-      <ol>
-        Patagonia
-      </ol>
-      <ol>
-        Corona
-      </ol>
-      <ol>
-        Antares
-      </ol>
-      <ol>
-        Stella Artois
-      </ol>
-
-      <h3>Vinos</h3>
-      <ol>
-        Rutini Cabernet Malbec
-      </ol>
-      <ol>
-        Vino Del Fin DeL Mundo Reserva Chardonnay
-      </ol>
-      <ol>
-        Finca La Linda Chardonnay Blanco
-      </ol>
-      <ol>
-        Limousin Reserva Malbec
-      </ol>
-      <ol>
-        Vino Don David Malbec
-      </ol>
-      <ol>
-        Vino Finca La Anita Malbec
-      </ol>
-
-      <h3>Refrescos y No Alcohólicos</h3>
-      <ol>
-        Gaseosas - Coca-Cola, Pepsi, Sprite y Fanta.
-      </ol>
-      <ol>
-        Agua Mineral - Agua con y sin gas.
-      </ol>
-      <ol>
-        Jugos Naturales - Limonada, Jugo de Naranga ó Frutilla.
-      </ol>
-
-      <h3>Picadas y Platos para Compartir</h3>
-      <ol>
-        Papas con Cheddar - Papas con cheddar derretido, panceta y cebolla de
-        verdeo.
-      </ol>
-      <ol>
-        Picada Porteña - Variedad de quesos, embutidos y aceitunas.
-      </ol>
-      <ol>
-        Empanadas - Selección de empanadas tradicionales argentinas.
-      </ol>
-      <ol>
-        Milanesa a la Napolitana - Milanesa de carne con salsa de tomate y queso
-        gratinado.
-      </ol>
-      <ol>
-        Parrillada para Compartir - Selección de carnes a la parrilla con
-        guarniciones.
-      </ol>
-
-      <h3>Hamburguesas</h3>
-      <ol>
-        Hamburguesa Clásica - Carne de res, cebolla, cheddar, bacon, salsa.
-      </ol>
-      <ol>
-        Hamburguesa BBQ - Carne de res, cebolla, cheddar, bacon, salsa BBQ.
-      </ol>
-      <ol>
-        Hamburguesa Cheddar Deluxe - Carne de res, cheddar doble, bacon, tomate,
-        mayonesa.
-      </ol>
-      <ol>
-        Hamburguesa Vegetariana - Hamburguesa de garbanzos, tomate, cebolla,
-        alioli.
-      </ol>
-
-      <h3>Platos Principales</h3>
-      <ol>
-        Milanesa a la Napolitana - Milanesa de carne con jamón, salsa de tomate
-        y queso, acompañada de papas fritas.
-      </ol>
-      <ol>
-        Asado Criollo - Chorizo, morcilla, tira de asado, vacío y achuras a la
-        parrilla, con chimichurri y ensalada.
-      </ol>
-      <ol>
-        Pasta Casera con Salsa Bolognesa - Fettuccine casero con una rica salsa
-        de carne y tomate.
-      </ol>
-      <ol>
-        Parrillada de Pescado - Variedad de pescados y mariscos a la parrilla,
-        con papas y vegetales a la brasa.
-      </ol>
-      <ol>
-        Pizza Margherita - Pizza con tomate, mozzarella, albahaca fresca y
-        aceite de oliva.
-      </ol>
-
-      <!-- Puedes usar listas, tablas o cualquier otro formato para mostrar el menú -->
-    </section>
-
-    <section id="eventos">
-      <h2>Eventos</h2>
-      <p>Descubre los eventos especiales que tenemos preparados para ti.</p>
-      <ol>
-        (26/10) - Noche de Karaoke.
-      </ol>
-      <ol>
-        (27/10) - Especial Noche de HALLOWEN.
-      </ol>
-      <ol>
-        (29/10) - Tango de Domingo
-      </ol>
-      <ol>
-        (04/11) - Noche de Stand Up, con la participacion de Connie Ballarini,
-        Ezequiel Campa y más.
-      </ol>
-      <ol>
-        (11/11) - Noche de Birras, 4x1 en Media Pinta para vos y tus amigos.
-      </ol>
-
-      <!-- Puedes listar los eventos y proporcionar detalles sobre fechas, horarios, etc. -->
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <address>
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente2.jpg" alt="Cliente 2" />
         <p>
-          Dirección: Av. Santa Fe & Av. Callao, Ciudad Autónoma de Buenos Aires,
-          Argentina.
+          "Super Bar es mi lugar favorito en la ciudad. Siempre me siento
+          bienvenido aquí."
         </p>
-        <p>Teléfono: +123 456 789</p>
+      </div>
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente3.jpg" alt="Cliente 3" />
         <p>
-          Email: <a href="mailto:info@nombre-del-bar.com">info@superbar.com</a>
+          "No puedo creer lo fantástico que es Super Bar. Cada visita es una delicia para los sentidos. ¡Libertad y
+          buenos tragos!"
         </p>
-      </address>
-      <!-- Puedes incluir un formulario de contacto si lo deseas -->
-    </section>
+      </div>
+      <div class="opinion">
+        <img src="./assets/img/opiniones/cliente4.jpg" alt="Cliente 4" />
+        <p>
+          "Super Bar es el lugar donde hago mis mejores recuerdos. ¡La comida
+          es sublime!"
+        </p>
+      </div>
+      <!-- Agrega más opiniones según sea necesario -->
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2023 Super Bar Codo a Codo</p>
-      <img src="./assets/img/logo-codoacodo.png" alt="Logo de Super Bar" />
-    </footer>
-  </body>
+  <section class="menu">
+    <div class="menu-category">
+      <h2>Aperitivos</h2>
+      <ul>
+        <li class="menu-item" data-name="Aperitivo 1" data-price="5.99">
+          <span class="menu-item-name">Aperitivo 1</span>
+          <span class="menu-item-price">$5.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Aperitivo 2" data-price="6.99">
+          <span class="menu-item-name">Aperitivo 2</span>
+          <span class="menu-item-price">$6.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Aperitivo 3" data-price="4.99">
+          <span class="menu-item-name">Aperitivo 3</span>
+          <span class="menu-item-price">$4.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <!-- Agrega más elementos aquí -->
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h2>Cocteles</h2>
+      <ul>
+        <li class="menu-item" data-name="Coctel 1" data-price="8.99">
+          <span class="menu-item-name">Coctel 1</span>
+          <span class="menu-item-price">$8.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 2" data-price="9.99">
+          <span class="menu-item-name">Coctel 2</span>
+          <span class="menu-item-price">$9.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Coctel 3" data-price="7.99">
+          <span class="menu-item-name">Coctel 3</span>
+          <span class="menu-item-price">$7.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h2>Cervezas</h2>
+      <ul>
+        <li class="menu-item" data-name="Cerveza 1" data-price="5.99">
+          <span class="menu-item-name">Cerveza 1</span>
+          <span class="menu-item-price">$3.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Cerveza 2" data-price="6.99">
+          <span class="menu-item-name">Cerveza 2</span>
+          <span class="menu-item-price">$4.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Cerveza 3" data-price="4.99">
+          <span class="menu-item-name">Cerveza 3</span>
+          <span class="menu-item-price">$5.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <!-- Agrega más elementos aquí -->
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h2>Vinos</h2>
+      <ul>
+        <li class="menu-item" data-name="Vino 1" data-price="5.99">
+          <span class="menu-item-name">Vino 1</span>
+          <span class="menu-item-price">$12.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Vino 2" data-price="6.99">
+          <span class="menu-item-name">Vino 2</span>
+          <span class="menu-item-price">$14.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+        <li class="menu-item" data-name="Vino 3" data-price="4.99">
+          <span class="menu-item-name">Vino 3</span>
+          <span class="menu-item-price">$11.99</span>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="eventos">
+    <h2>Eventos</h2>
+    <p>Descubre los eventos especiales que tenemos preparados para ti.</p>
+    <ol>
+      (26/10) - Noche de Karaoke.
+    </ol>
+    <ol>
+      (27/10) - Especial Noche de HALLOWEN.
+    </ol>
+    <ol>
+      (29/10) - Tango de Domingo
+    </ol>
+    <ol>
+      (04/11) - Noche de Stand Up, con la participacion de Connie Ballarini,
+      Ezequiel Campa y más.
+    </ol>
+    <ol>
+      (11/11) - Noche de Birras, 4x1 en Media Pinta para vos y tus amigos.
+    </ol>
+
+    <!-- Puedes listar los eventos y proporcionar detalles sobre fechas, horarios, etc. -->
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <address>
+      <p>
+        Dirección: Av. Santa Fe & Av. Callao, Ciudad Autónoma de Buenos Aires,
+        Argentina.
+      </p>
+      <p>Teléfono: +123 456 789</p>
+      <p>
+        Email: <a href="mailto:info@nombre-del-bar.com">info@superbar.com</a>
+      </p>
+    </address>
+    <!-- Puedes incluir un formulario de contacto si lo deseas -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Super Bar Codo a Codo</p>
+    <img src="./assets/img/logo-codoacodo.png" alt="Logo de Super Bar" />
+  </footer>
+
+  <div id="cart-icon-container">
+    <i class="fas fa-shopping-cart" id="cart-icon"></i>
+</div>
+<aside id="cart-aside" class="cart-aside">
+  <i class="fas fa-times" id="cart-close-button"></i>
+    <div class="cart-content" id="cart-content-aside">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items-aside">
+            <!-- Aquí se mostrarán los elementos agregados -->
+        </ul>
+        <p>Total: <span id="cart-total-aside">$0.00</span></p>
+    </div>
+</aside>
+
+</body>
+
 </html>
