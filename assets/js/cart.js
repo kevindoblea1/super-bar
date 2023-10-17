@@ -16,12 +16,18 @@ function addToCartAside(itemName, itemPrice) {
     li.textContent = `${itemName} - $${itemPrice.toFixed(2)}`;
     cartItemsAside.appendChild(li);
 
+    // Incrementar el contador del carrito
+    const cartItemCount = document.getElementById('cart-item-count');
+    const itemCount = parseInt(cartItemCount.textContent);
+    cartItemCount.textContent = itemCount + 1;
+
     const total = Array.from(cartItemsAside.children).reduce((acc, el) => {
         const price = parseFloat(el.textContent.match(/\$\d+\.\d{2}/)[0].substring(1));
         return acc + price;
     }, 0);
     cartTotalAside.textContent = `$${total.toFixed(2)}`;
 }
+
 
 // Captura de clics en los botones "Agregar" en el menú
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
