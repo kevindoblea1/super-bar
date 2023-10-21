@@ -47,7 +47,10 @@
 .menu-category h2 {
     color: var(--menu-text-color);
 }
-
+.menu-category h4 {
+    text-align: center;
+    color: rgb(228, 240, 216);
+}
 .menu-category ul {
     list-style: none;
     padding: 0;
@@ -70,6 +73,7 @@
 
 .menu-item-name,
 .menu-item-price {
+    
     flex: 1;
 }
 
@@ -155,6 +159,7 @@
   .checkout-button:hover {
     background-color: #ff9900; /* Cambia el color de fondo al pasar el mouse similar al botón de Reserva una mesa */
   }
+  
   
 
 /* Estilos responsivos */
