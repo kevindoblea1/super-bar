@@ -1,6 +1,10 @@
 # Repositorio Super-Bar
 
-Este es un repositorio de ejemplo que te guiará a través de los pasos básicos para trabajar con Git. Aprenderás cómo clonar el repositorio, crear tu propia rama y realizar commit y push de tus cambios.
+Este es un repositorio para el proyecto a presentar en codo a codo.
+
+Deploid del sitio: [SuperBar](https://kevindoblea1.github.io/super-bar)
+
+Si tienes problemas para trabajar con github aprenderás cómo clonar el repositorio, crear tu propia rama y realizar commit y push de tus cambios.
 
 ## Clonar el Repositorio
 
