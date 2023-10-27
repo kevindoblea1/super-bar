@@ -3,10 +3,16 @@
     --header-background: #333;
     --text-color: #fff;
     --link-color: #ffcc00;
-    --link-hover-color: #ffcc00; /* Nuevo color al pasar el mouse */
-    --link-zoom-scale: 1.25; /* Nuevo valor para la escala al pasar el mouse */
-    --link-transition-duration: 0.3s; /* Nueva duración de la transición */
+    --link-hover-color: #ffcc00; 
+    --link-zoom-scale: 1.25; 
+    --link-transition-duration: 
 }
+
+#logo {
+    width: 100px; 
+    height: auto; 
+  }
+  
 
 /* Estilo base del header */
 header {
@@ -18,7 +24,6 @@ header {
     padding: 10px 20px;
 }
 
-/* Estilo de los elementos <li> */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -28,15 +33,14 @@ nav ul {
 nav li {
     margin-right: 20px;
     position: relative;
-    transition: transform var(--link-transition-duration); /* Usar variable */
+    transition: transform var(--link-transition-duration); 
 }
 
-/* Estilo al pasar el mouse (animación de zoom) */
+
 nav li:hover {
-    transform: scale(var(--link-zoom-scale)); /* Usar variable */
+    transform: scale(var(--link-zoom-scale)); 
 }
 
-/* Estilo de los enlaces <a> dentro de <li> */
 nav a {
     text-decoration: none;
     color: var(--text-color);
@@ -44,10 +48,9 @@ nav a {
 
 /* Cambiar el color de texto al pasar el mouse */
 nav li:hover a {
-    color: var(--link-hover-color); /* Usar variable */
+    color: var(--link-hover-color); 
 }
 
-/* Eliminar el zoom en los elementos no seleccionados */
 nav li:not(:hover) {
     transform: scale(1);
 }

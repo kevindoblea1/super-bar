@@ -145,19 +145,19 @@
     right: 10px;
 }
 
-/* Estilos para el botón de compra */
+
 .checkout-button {
-    background-color: #ffcc00; /* Color de fondo similar al botón de Reserva una mesa */
-    color: #333; /* Color del texto similar al botón de Reserva una mesa */
-    padding: 10px 20px; /* Espaciado interno similar al botón de Reserva una mesa */
-    text-decoration: none; /* Eliminar subrayado en el enlace (si es un enlace) */
-    border-radius: 5px; /* Bordes redondeados similar al botón de Reserva una mesa */
-    font-weight: bold; /* Peso de la fuente similar al botón de Reserva una mesa */
-    display: inline-block; /* Mostrar el botón en línea con el contenido */
+    background-color: #ffcc00; 
+    color: #333; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    display: inline-block; 
   }
   
   .checkout-button:hover {
-    background-color: #ff9900; /* Cambia el color de fondo al pasar el mouse similar al botón de Reserva una mesa */
+    background-color: #ff9900; 
   }
   
   

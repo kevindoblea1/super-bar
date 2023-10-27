@@ -3,9 +3,8 @@ const cartAside = document.getElementById("cart-aside");
 const cartContentAside = document.getElementById("cart-content-aside");
 const cartItemsAside = document.getElementById("cart-items-aside");
 const cartTotalAside = document.getElementById("cart-total-aside");
-const cartCloseButton = document.getElementById("cart-close-button"); // Agrega esta línea
+const cartCloseButton = document.getElementById("cart-close-button"); 
 
-// Evento para hacer clic en el icono del carrito y mostrar/ocultar el aside del carrito
 cartIcon.addEventListener("click", () => {
   cartAside.classList.toggle("show");
 });
@@ -30,7 +29,7 @@ function addToCartAside(itemName, itemPrice) {
   cartTotalAside.textContent = `$${total.toFixed(2)}`;
 }
 
-// Captura de clics en los botones "Agregar" en el menú
+
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
 addToCartButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -40,18 +39,17 @@ addToCartButtons.forEach((button) => {
     addToCartAside(itemName, itemPrice);
   });
 });
-// Evento para hacer clic en el icono del carrito y mostrar/ocultar el aside del carrito
 cartIcon.addEventListener("click", () => {
   cartIcon.classList.add("hidden");
   cartAside.classList.add("show");
-  cartCloseButton.style.display = "block"; // Muestra el icono "X"
+  cartCloseButton.style.display = "block"; 
 });
 
 // Evento para hacer clic en el icono "X" y ocultar el aside del carrito
 cartCloseButton.addEventListener("click", () => {
-  cartIcon.classList.remove("hidden"); // Muestra el icono del carrito
+  cartIcon.classList.remove("hidden"); 
   cartAside.classList.remove("show");
-  cartCloseButton.style.display = "none"; // Oculta el icono "X"
+  cartCloseButton.style.display = "none"; 
 });
 // Agrega esta función para manejar el botón de compra
 function handleCheckout() {
@@ -69,8 +67,8 @@ function handleCheckout() {
     printWindow.document.write("<h2>___________________________</h2>");
     printWindow.document.write("<p>Cant./Precio Unit.</p>");
 
-    // Aquí debes agregar el contenido de los elementos del carrito
-    const cartItems = document.querySelectorAll("#cart-items-aside li"); // Suponiendo que los elementos del carrito están dentro de una lista
+  
+    const cartItems = document.querySelectorAll("#cart-items-aside li"); 
     cartItems.forEach((item) => {
       const itemText = item.textContent;
       printWindow.document.write(`<p>${itemText}</p>`);

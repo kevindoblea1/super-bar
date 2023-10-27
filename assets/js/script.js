@@ -1,8 +1,8 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
-
-// Agregar un manejador de eventos a los elementos del menú
 const navMenuItems = document.querySelectorAll(".nav-menu-link");
+
+
 navMenuItems.forEach((item) => {
   item.addEventListener("click", () => {
     // Ocultar el menú al hacer clic en un elemento del menú
@@ -23,7 +23,6 @@ navToggle.addEventListener("click", () => {
 });
 
 // scroll to up
-
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");

@@ -1,15 +1,15 @@
 :root {
-    --opiniones-background: #666; /* Fondo de la sección de opiniones */
-    --opiniones-text: #ffcc00; /* Color de texto de opiniones */
-    --opiniones-container-bg: #222; /* Color de fondo del contenedor de opiniones */
-    --opiniones-border: #794a02; /* Color del borde de opiniones */
-    --opiniones-border-radius: 5px; /* Radio de borde de opiniones */
-    --opiniones-padding: 20px; /* Relleno de opiniones */
-    --opiniones-max-width: 300px; /* Ancho máximo de opiniones */
-    --opiniones-img-max-width: 100px; /* Ancho máximo de la imagen de opiniones */
-    --opiniones-img-border-radius: 50%; /* Radio de borde de la imagen de opiniones */
-    --opiniones-font-size: 16px; /* Tamaño de fuente de opiniones */
-    --opiniones-link-hover: #ff9900; /* Color de fondo al pasar el ratón sobre enlaces en opiniones */
+    --opiniones-background: #666; 
+    --opiniones-text: #ffcc00;
+    --opiniones-container-bg: #222; 
+    --opiniones-border: #794a02; 
+    --opiniones-border-radius: 5px; 
+    --opiniones-padding: 20px;
+    --opiniones-max-width: 300px; 
+    --opiniones-img-max-width: 100px; 
+    --opiniones-img-border-radius: 50%; 
+    --opiniones-font-size: 16px; 
+    --opiniones-link-hover: #ff9900; 
   }
   
   /* Estilos para la sección de opiniones */
