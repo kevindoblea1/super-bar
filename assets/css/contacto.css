@@ -1,17 +1,31 @@
-:root {
-    --color-background: #333; 
-    --color-text: #fff; 
-    --color-primary: #ffcc00; 
-    --color-secondary: #ff9900; 
-    --color-section-background: #444; 
-    --color-header-background: #222; 
-}
-/* Estilos para el formulario de contacto */
-#formulario-contacto form {
-    max-width: 100%;
-    margin: 0;
+#contacto {
+    margin-left: 4%; 
+    margin-right: 4%;
     padding: 20px;
     background-color: var(--color-section-background);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    color: var(--color-primary);
+}
+
+#contacto p {
+    color: var(--color-text);
+}
+
+#info-contacto {
+    color: var(--color-primary);
+}
+
+#info-contacto p {
+    margin: 10px 0;
+}
+
+#formulario-contacto {
+    background-color: var(--color-background);
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -51,38 +65,4 @@
 
 #formulario-contacto form button:hover {
     background-color: var(--color-secondary);
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-primary); 
-    color: var(--color-text); 
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: var(--color-secondary); 
-}
-
-/* Estilos específicos para el botón "Contactanos" en la sección de "Contacto */
-a.cta-button.contact {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-primary); 
-    color: var(--color-header-background); 
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px; 
-}
-
-a.cta-button.contact:hover {
-    background-color: var(--color-secondary); 
 }

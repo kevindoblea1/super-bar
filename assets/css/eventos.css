@@ -1,4 +1,6 @@
   #eventos {
+    margin-left: 4%; 
+    margin-right: 4%;
     margin: 50 auto; /* Esto centrará la sección horizontalmente */
     padding: 20px; /* Agrega un espacio interior alrededor de la sección "eventos" */
     border-radius: 10px; /* Añade esquinas redondeadas (si lo deseas) */

@@ -19,10 +19,15 @@
 }
 
 /* Estilos adicionales para la sección de menú */
+#menu {
+    margin-left: 4%; 
+    margin-right: 4%;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
 }

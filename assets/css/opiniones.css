@@ -19,8 +19,12 @@
     text-align: center;
   }
   
+  #opiniones {
+    margin-left: 4%; 
+    margin-right: 4%;
+  }
   .opiniones-container {
-    display: flex;
+        display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
