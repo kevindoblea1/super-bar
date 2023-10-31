@@ -3,13 +3,13 @@
     --menu-margin: 10px;
     --menu-padding: 15px;
     --menu-bg-color: #222;
-    --menu-border: 1px solid #ddd;
+    --menu-border: 1px solid #8d0d0d;
     --menu-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     --menu-transform-scale: 1.02;
     --menu-box-shadow-hover: 0 0 20px rgba(0, 0, 0, 0.3);
     --menu-text-color: #ffcc00;
     --menu-text-bold: bold;
-    --menu-text-color-hover: #666;
+    --menu-text-color-hover: #f6f4f1;
     --cart-bg-color: #333;
     /* Nuevo color de fondo del aside del carrito */
     --cart-text-color: #fff;

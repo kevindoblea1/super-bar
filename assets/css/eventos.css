@@ -1,0 +1,19 @@
+  #eventos {
+    margin: 50 auto; /* Esto centrará la sección horizontalmente */
+    padding: 20px; /* Agrega un espacio interior alrededor de la sección "eventos" */
+    border-radius: 10px; /* Añade esquinas redondeadas (si lo deseas) */
+    text-align: center; /* Centra el contenido dentro de la sección "eventos" */
+  }
+  
+  #eventos ul {
+    list-style: none; /* Elimina las viñetas de la lista */
+    padding: 0; /* Elimina cualquier espacio interior de la lista */
+  }
+  
+  /* Media query para ajustar el margen en pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+    #seccion-anterior {
+      margin-bottom: 10px; /* Ajusta la separación en pantallas más pequeñas */
+    }
+  }
+  
